@@ -1,0 +1,142 @@
+// howItWorks
+
+.howItWorks {
+    padding-top: 78px;
+    padding-bottom: 70px;
+    background:  $section_grey;
+
+    .section__subtitle {
+
+    }
+    
+    .section__title {
+        
+    }
+
+}
+
+.howItWorks__wrapper {
+    margin-top: 35px;
+}
+
+.howItWorks__item {
+    background: $white;
+}
+
+.howItWorks__head {
+    padding: 20px 37px 41px 40px;
+    background: $dark-blue;
+
+    h5 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.86;
+    }
+
+    p {
+        font-size: 10px;
+        line-height: 1.3;
+        margin-top: 2px;
+        color: $grey;
+    }
+    &-content {
+
+        p.howItWorks__head-status {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            line-height: 1.3;
+            color: $green;
+            margin-top: 6px;
+        }
+
+        span.available-status__true {
+            width: 7px;
+            height: 7px;
+            background-color: #62c370;
+            border-radius: 50%;
+            display: block;
+            margin-right: 4px;
+            // border: 2px solid opacity: 0.37;
+        }
+    }
+    
+}
+
+.howItWorks__head-content__wrapper {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 4px;
+    display: flex;
+}
+
+.howItWorks__head-img {
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.howItWorks__content {
+    padding: 0 53px;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    text-align: center;
+    
+    &-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+    }
+
+    &-text {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $grey;
+    }
+
+    &-btn {
+        margin-top: 24px;
+    }
+}
+
+// 2 item
+
+.howItWorks__head-item {
+
+    P {
+
+    }
+}
+
+.howItWorks__head-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.howItWorks__head-content h5 {
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 7px;
+    }
+}
+
+.--book-an-appointment {
+    .howItWorks__head p {
+        margin-top: 7px;
+    }
+}
+
+.howItWorks__head-item__icon {
+
+    img {
+
+    }
+}
+
+//  3 
+
+.howItWorks__head-img {
+
+}

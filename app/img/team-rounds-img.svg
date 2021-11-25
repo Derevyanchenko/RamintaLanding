@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="188" height="188" viewBox="0 0 188 188">
+  <g id="team-rounds-img" transform="translate(-728 -2257)">
+    <g id="Эллипс_7" data-name="Эллипс 7" transform="translate(768 2297)" fill="none" stroke="#fbf3ed" stroke-width="10">
+      <circle cx="53.5" cy="53.5" r="53.5" stroke="none"/>
+      <circle cx="53.5" cy="53.5" r="48.5" fill="none"/>
+    </g>
+    <g id="Эллипс_8" data-name="Эллипс 8" transform="translate(747 2276)" fill="none" stroke="#fbf3ed" stroke-width="10" opacity="0.694">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="70" fill="none"/>
+    </g>
+    <g id="Эллипс_9" data-name="Эллипс 9" transform="translate(728 2257)" fill="none" stroke="#fbf3ed" stroke-width="10" opacity="0.384">
+      <circle cx="94" cy="94" r="94" stroke="none"/>
+      <circle cx="94" cy="94" r="89" fill="none"/>
+    </g>
+  </g>
+</svg>

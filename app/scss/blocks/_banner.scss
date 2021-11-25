@@ -1,0 +1,23 @@
+// banner
+
+.banner {
+    background: $light-blue;
+
+    .section__title {
+        margin-top: 20px;
+    }
+    
+    .section__content {
+        margin-top: 20px;
+    }
+}
+
+.banner__btn {
+    margin-top: 36px;
+    padding: 15px 32px;
+}
+
+.banner__content {
+    align-self: center;
+}
+
