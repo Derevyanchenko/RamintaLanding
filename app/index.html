@@ -6,42 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ramita</title>
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
     <body>
 
-        <!-- <div class="mobileMenu-overlay">
+        <div class="mobileMenu-overlay">
     <div class="mobileMenu">
         <button class="mobileMenu__close">
-            <img src="img/cancel.svg" alt="">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.925 8.08919C25.3725 7.53669 24.48 7.53669 23.9275 8.08919L17 15.0025L10.0725 8.07502C9.52002 7.52252 8.62752 7.52252 8.07502 8.07502C7.52252 8.62752 7.52252 9.52002 8.07502 10.0725L15.0025 17L8.07502 23.9275C7.52252 24.48 7.52252 25.3725 8.07502 25.925C8.62752 26.4775 9.52002 26.4775 10.0725 25.925L17 18.9975L23.9275 25.925C24.48 26.4775 25.3725 26.4775 25.925 25.925C26.4775 25.3725 26.4775 24.48 25.925 23.9275L18.9975 17L25.925 10.0725C26.4634 9.53419 26.4634 8.62752 25.925 8.08919Z" fill="#357b82"/>
+            </svg>    
         </button>
         <div class="mobileMenu__container">
             <ul class="header__menu">
                 <li>
-                    <a href="#services">Услуги</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#prices">Прайс</a>
+                    <a href="#">How it works</a>
                 </li>
                 <li>
-                    <a href="#installs">Установки</a>
+                    <a href="#">Specialties</a>
                 </li>
                 <li>
-                    <a href="#map">Контакты</a>
+                    <a href="#">Medical team</a>
                 </li>
             </ul>
-            <a href="mailto:info@mail.ru" class="header__link header__mail">
-                <img src="./img/mail-icon-mob.svg" alt="">
-                info@mail.ru
-            </a>
-            <a href="tel:+7(351)777-06-66" class="header__link header__tel">
-                <img src="./img/phone-icon-mob.svg" alt="">
-                +7 (351) 777-06-66
-            </a>
-            <button class="btn btn-bordered header__btn open_call_popup">Перезвонить</button>
+            <a href="#" class="btn btn-rounded btn-shadow btn-blue header__btn">Find a Doctor</a>
         </div>
     </div>
-</div> -->
+</div>
 
 <header class="header">
     <div class="container">
@@ -82,7 +77,7 @@
         <section class="banner">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 d-flex">
+            <div class="col-xl-5 col-lg-6 d-flex">
                 <div class="banner__content">
                     <p class="section__subtitle">Telehealth</p>
                     <h1 class="section__title banner__title">Seamless virtual care.
@@ -95,28 +90,36 @@
                     <a href="#" class="btn btn-blue btn-rounded btn-bordered banner__btn">Get started</a>
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-xl-7 col-lg-6">
                 <div class="bannner__image">
                     <img src="./img/main-banner.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="row" style="display: none;">
-            <div class="col-lg-12">
+        <div class="row">
+            <div class="col-xl-9 col-lg-12 offset-lg-1point5  col-sm-10 offset-sm-1 offset-lg-0">
                 <div class="banner__search search__section">
                     <form action="#" class="search__form banner__search__form">
                         <div class="form-control">
                             <div class="form__icon">
                                 <img src="./img/marker-icon.svg" alt="">
                             </div>
-                            <input class="form__field" placeholder="New York, NY 10016, USA" />
+                            <input class="form-field" placeholder="New York, NY 10016, USA" />
                         </div>
                         <div class="form-control">
                             <div class="form__icon">
                                 <img src="./img/search-icon.svg" alt="">
                             </div>
-                            <input class="form__field" placeholder="Primary Care" />
+                            <!-- <input class="form-field" placeholder="Primary Care" /> -->
+                            <select name="main_search" class="form-field select select-js">
+                                <option value="Primary Care">Primary Care</option>
+                                <option value="Primary Care 1">Primary Care 1</option>
+                                <option value="Primary Care 2">Primary Care 2</option>
+                            </select>
                         </div>
+                        <!-- <div class="form-btn__wrapper"> -->
+                            <button class="btn btn-rounded btn-brown form-btn">Search</button>
+                        <!-- </div> -->
                     </form>
                 </div>
             </div>
@@ -133,9 +136,9 @@
             </div>
         </div>
         <div class="howItWorks__wrapper">
-            <div class="row">
+            <div class="row col-margins-7">
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 col-paddings-7">
                     <div class="howItWorks__item --see-specialities">
                         <div class="howItWorks__item-head howItWorks__head">
                             <div class="howItWorks__head-content__wrapper">
@@ -160,45 +163,23 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4">
-                    <div class="howItWorks__item --see-specialities">
-                        <div class="howItWorks__item-head howItWorks__head">
-                            <div class="howItWorks__head-content__wrapper">
-                                <div class="howItWorks__head-img">
-                                    <img src="./img/howItWorks-img.png" alt="">
-                                </div>
-                                <div class="howItWorks__head-content">
-                                    <h5>Dr. Susan Williams </h5>
-                                    <p>Speciality, Family Medicine </p>
-                                    <p class="howItWorks__head-status">
-                                        <span class="available-status available-status__true"></span>
-                                        Available
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="howItWorks__item-content howItWorks__content">
-                            <h3 class="howItWorks__content-title">Choose a medical specialty that you need</h3>
-                            <p class="howItWorks__content-text">Choose from more than <br> XX specialties</p>
-                            <a href="#" class="btn btn-bordered btn-rounded btn-blue-round howItWorks__content-btn">See specialties</a>
-                        </div>
-                    </div>
-                </div>
                 
-                <!-- <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 col-paddings-7">
                     <div class="howItWorks__item --read-more">
                         <div class="howItWorks__item-head howItWorks__head">
-                            <div class="howItWorks__head-item">
-                                <span class="howItWorks__head-item__icon">
-                                    <img src="./img/check-green-icon.svg" alt="">
-                                </span>
-                                <p>Summary of training, clinical interests, personal</p>
-                            </div>
-                            <div class="howItWorks__head-item">
-                                <span class="howItWorks__head-item__icon">
-                                    <img src="./img/check-green-icon.svg" alt="">
-                                </span>
-                                <p>Accomplishments in field and affiliations, personal</p>
+                            <div class="howItWorks__head-content__wrapper">
+                                <div class="howItWorks__head-item">
+                                    <span class="howItWorks__head-item__icon">
+                                        <img src="./img/check-green-icon.svg" alt="">
+                                    </span>
+                                    <p>Summary of training, clinical interests, personal</p>
+                                </div>
+                                <div class="howItWorks__head-item">
+                                    <span class="howItWorks__head-item__icon">
+                                        <img src="./img/check-green-icon.svg" alt="">
+                                    </span>
+                                    <p>Accomplishments in field and affiliations, personal</p>
+                                </div>
                             </div>
                         </div>
                         <div class="howItWorks__item-content howItWorks__content">
@@ -209,10 +190,10 @@
                             <a href="#" class="btn btn-bordered btn-rounded btn-blue-round howItWorks__content-btn">Read more</a>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 col-paddings-7">
                     <div class="howItWorks__item --book-an-appointment">
                         <div class="howItWorks__item-head howItWorks__head">
                             <div class="howItWorks__head-content__wrapper">
@@ -249,11 +230,11 @@
         <section class="specialties">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
                 <p class="section__subtitle">SPECIALTIES</p>
-                <h1 class="section__title banner__title">Common conditions we treat</h1>
+                <h1 class="section__title">Common conditions we treat</h1>
                 <p class="section__content">
-                    Make your journey to appointment more easy by clicking a specialty
+                    Make your journey to appointment more easy by clicking a specialty <br>
                     and going straight to a provider you need
                 </p>
             </div>
@@ -270,11 +251,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Family medicine
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                    </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -287,11 +266,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Internal medicine
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -304,11 +281,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 OB-GYN
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -321,11 +296,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Men’s health
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -338,11 +311,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Hand surgery
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -355,11 +326,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Cardiology
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -372,11 +341,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Oncology
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -389,11 +356,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Rheumatology
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -406,11 +371,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Health coach
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -423,11 +386,9 @@
                             </div>
                             <a href="#" class="specialties__item-link">
                                 Functional medicine
-                                <span class="icon">
-                                    <svg id="specialties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
-                                      </svg>                                      
-                                </span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <text id="_" data-name="􀁽" transform="translate(12 19)" fill="#9f5f48" font-size="20" font-family="SFProText-Medium, SF Pro Text" font-weight="500"><tspan x="-11.851" y="0">􀁽</tspan></text>
+                                </svg>                                      
                             </a>
                         </div>
                     </div>
@@ -443,35 +404,76 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-lg-7">
+            <div class="col-lg-6 col-md-6">
                 <div class="team__slider-wrapper">
+                    <div class="team__slider-arrows">
+                        <button class="team__slider-arrow team__slider-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+                                <g id="team-arrow-left" transform="translate(1)">
+                                  <text id="_" data-name="􀰌" transform="translate(9 15)" fill="#357b82" font-size="16" font-family="SFProText-Regular, SF Pro Text"><tspan x="-9.246" y="0">􀰌</tspan></text>
+                                </g>
+                            </svg>                              
+                        </button>
+                        <button class="team__slider-arrow team__slider-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+                                <g id="team-arrow-right" transform="translate(1)">
+                                  <text id="_" data-name="􀄫" transform="translate(9 15)" fill="#357b82" font-size="16" font-family="SFProText-Regular, SF Pro Text"><tspan x="-9.246" y="0">􀄫</tspan></text>
+                                </g>
+                            </svg>                              
+                        </button>
+                    </div>
                     <div class="team__slider">
                         <div class="team__slider-item">
-                            <div class="team__item" style="background: url(./img/team-img-1.png);">
+                            <div class="team__item" style="background-image: url(./img/team-img-1.png);">
                                 <div class="team__item-content">
                                     <h4 class="team__item-name">Dr. Sharlotte Brown</h4>
                                     <p class="team__item-text">Primary Care</p>
                                     <div class="team__item-controls">
                                         <div class="like">
                                             <button class="like-btn">
-                                                *like icon*
+                                                <svg id="like-active" xmlns="http://www.w3.org/2000/svg" width="21.813" height="18.79" viewBox="0 0 21.813 18.79">
+                                                    <path id="Контур_56" data-name="Контур 56" d="M-499.687,473.528v1.108a1.685,1.685,0,0,0-.037.183,6.343,6.343,0,0,1-1.056,2.93,14.077,14.077,0,0,1-2.846,3.032c-2.274,1.893-4.567,3.762-6.85,5.644a.152.152,0,0,1-.234,0q-2.985-2.453-5.974-4.9a24.075,24.075,0,0,1-2.91-2.71,7.278,7.278,0,0,1-1.707-3.075c-.087-.363-.134-.736-.2-1.1v-1.108c.071-.425.118-.855.218-1.274a5.79,5.79,0,0,1,2.346-3.582,5.9,5.9,0,0,1,7.989,1.424c.119.163.232.331.357.51l.128-.195a5.93,5.93,0,0,1,7-2.362,5.6,5.6,0,0,1,3.552,4.2C-499.8,472.67-499.759,473.1-499.687,473.528Z" transform="translate(521.5 -467.69)" fill="#ee6055"/>
+                                                </svg>
                                             </button>
-                                            324+
+                                            <span class="like-count">324+</span>
                                         </div>
-                                        <a href="#" class="btn btn-rounded btn-transparent btn-blue team__item-btn">About a doctor</a>
+                                        <a href="#" class="btn btn-rounded btn-bordered btn-blue-round team__item-btn">About a doctor</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- team__slider-item -->
+
+                        <div class="team__slider-item">
+                            <div class="team__item" style="background-image: url(./img/team-img-1.png);">
+                                <div class="team__item-content">
+                                    <h4 class="team__item-name">Dr. Sharlotte Brown 2</h4>
+                                    <p class="team__item-text">Primary Care 2</p>
+                                    <div class="team__item-controls">
+                                        <div class="like">
+                                            <button class="like-btn">
+                                                <svg id="like-active" xmlns="http://www.w3.org/2000/svg" width="21.813" height="18.79" viewBox="0 0 21.813 18.79">
+                                                    <path id="Контур_56" data-name="Контур 56" d="M-499.687,473.528v1.108a1.685,1.685,0,0,0-.037.183,6.343,6.343,0,0,1-1.056,2.93,14.077,14.077,0,0,1-2.846,3.032c-2.274,1.893-4.567,3.762-6.85,5.644a.152.152,0,0,1-.234,0q-2.985-2.453-5.974-4.9a24.075,24.075,0,0,1-2.91-2.71,7.278,7.278,0,0,1-1.707-3.075c-.087-.363-.134-.736-.2-1.1v-1.108c.071-.425.118-.855.218-1.274a5.79,5.79,0,0,1,2.346-3.582,5.9,5.9,0,0,1,7.989,1.424c.119.163.232.331.357.51l.128-.195a5.93,5.93,0,0,1,7-2.362,5.6,5.6,0,0,1,3.552,4.2C-499.8,472.67-499.759,473.1-499.687,473.528Z" transform="translate(521.5 -467.69)" fill="#ee6055"/>
+                                                </svg>
+                                            </button>
+                                            <span class="like-count">143+</span>
+                                        </div>
+                                        <a href="#" class="btn btn-rounded btn-bordered btn-blue-round team__item-btn">About a doctor</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- team__slider-item -->
+
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-5">
+            <div class="col-lg-6 col-md-6">
                 <div class="team__content">
                     <p class="section__subtitle">MEDICAL TEAM</p>
-                    <h1 class="section__title team__title">
-                        Certified doctors are
+                    <h1 class="section__title">
+                        Certified doctors are <br>
                         ready to take care of you
                     </h1>
                     <p class="section__content">
@@ -479,7 +481,7 @@
                         family, working collaboratively with engineers to bring the
                         best healthcare EHR and communication solutions.
                     </p>
-                    <a href="#" class="btn btn-blue btn-bordered team__btn">Get started</a>
+                    <a href="#" class="btn btn-rounded btn-bordered btn-brown team__btn">Get started</a>
                 </div>
             </div>
 
@@ -490,17 +492,17 @@
         <section class="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
                 <div class="contact__content --content-color__white">
                     <p class="section__subtitle">CONTACT US</p>
-                    <h1 class="section__title contact__title">
+                    <h1 class="section__title">
                         Got a question? No problem!
                     </h1>
                     <p class="section__content">
-                        We’d love to answer any questions you may have. See our
+                        We’d love to answer any questions you may have. See our <br>
                         frequently asked questions or contact us directly. 
                     </p>
-                    <a href="#" class="btn btn-blue btn-bordered banner__btn">Contact us</a>
+                    <a href="#" class="btn btn-rounded btn-bordered border-white content__btn">Contact us</a>
                 </div>
             </div>
         </div>
@@ -511,60 +513,63 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p class="footer__copy">
-                    © 2022 Copyright name
-                </p>
+                <div class="footer__wrapper">
 
-                <ul class="header__menu footer__menu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms of Service</a>
-                    </li>
-                </ul>
+                    <p class="footer__copy">
+                        © 2022 Copyright name
+                    </p>
+    
+                    <ul class="header__menu footer__menu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Service</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer__social">
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18.287" height="15.05" viewBox="0 0 18.287 15.05">
+                                    <g id="twitter-icon" transform="translate(944.071 -473.363)">
+                                      <path id="Контур_39" data-name="Контур 39" d="M-944.071,486.686a7.677,7.677,0,0,0,5.49-1.561,3.9,3.9,0,0,1-3.518-2.643h1.629l.01-.063a3.912,3.912,0,0,1-2.955-3.761,3.926,3.926,0,0,0,1.693.454,4.036,4.036,0,0,1-1.644-2.9,3.723,3.723,0,0,1,.517-2.135,10.7,10.7,0,0,0,7.7,3.928,11.465,11.465,0,0,1,.006-1.192,3.6,3.6,0,0,1,2.418-3.184,3.627,3.627,0,0,1,3.924.777.377.377,0,0,0,.433.107c.634-.245,1.269-.487,1.9-.731.059-.023.115-.055.226-.108A3.754,3.754,0,0,1-927.8,475.7l.034.075,1.983-.55c-.044.068-.09.146-.142.219a7.265,7.265,0,0,1-1.535,1.571.369.369,0,0,0-.167.352,10.762,10.762,0,0,1-6.171,10.045,10.691,10.691,0,0,1-10.074-.563c-.058-.033-.115-.07-.171-.107C-944.054,486.738-944.056,486.719-944.071,486.686Z" transform="translate(0 0)" fill="#357b82"/>
+                                    </g>
+                                </svg>                              
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9.429" height="18.194" viewBox="0 0 9.429 18.194">
+                                    <g id="facebook-icon" transform="translate(175.162 -478.229)">
+                                      <path id="Контур_38" data-name="Контур 38" d="M-172.367,496.423c0-.077-.009-.153-.009-.23q0-3.907,0-7.814v-.25h-2.786v-3.235h2.786c0-.091,0-.16,0-.229,0-.846-.018-1.694.017-2.539a4.046,4.046,0,0,1,1.063-2.715,3.734,3.734,0,0,1,2-1.071,7.6,7.6,0,0,1,1.892-.094c.514.02,1.027.064,1.541.1a1.2,1.2,0,0,1,.129.023v2.884h-.186c-.633.009-1.267,0-1.9.033a1.144,1.144,0,0,0-1.2,1.205c-.032.78-.011,1.562-.013,2.344a.225.225,0,0,0,.02.052h3.173l-.416,3.234h-2.767c-.006.069-.014.12-.014.171q0,4,0,8.01c0,.041.006.082.009.123Z" fill="#357b82"/>
+                                    </g>
+                                </svg>                              
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.03" height="19.017" viewBox="0 0 19.03 19.017">
+                                    <g id="inst-icon" transform="translate(512.201 -454.759)">
+                                      <path id="Контур_40" data-name="Контур 40" d="M-403.292,552.381h3.761v1.712c.052-.027.078-.031.087-.046a4.11,4.11,0,0,1,3.643-1.975,5.416,5.416,0,0,1,2.508.469,3.653,3.653,0,0,1,1.923,2.407,9.232,9.232,0,0,1,.352,2.614c.017,2.446.01,4.893.012,7.34,0,.037-.005.075-.009.128h-3.938v-.26c0-2.075.006-4.15-.008-6.225a8.113,8.113,0,0,0-.125-1.407,1.825,1.825,0,0,0-2.293-1.6,2.017,2.017,0,0,0-1.881,1.966,9.583,9.583,0,0,0-.093,1.318c-.01,1.982,0,3.964,0,5.946v.294h-3.935Z" transform="translate(-102.166 -91.286)" fill="#357b82"/>
+                                      <path id="Контур_41" data-name="Контур 41" d="M-506.792,557.154h3.915v12.677h-3.915Z" transform="translate(-5.074 -96.055)" fill="#357b82"/>
+                                      <path id="Контур_42" data-name="Контур 42" d="M-507.636,457.04a2.3,2.3,0,0,1-2.268,2.311,2.314,2.314,0,0,1-2.3-2.309,2.3,2.3,0,0,1,2.272-2.282A2.286,2.286,0,0,1-507.636,457.04Z" fill="#357b82"/>
+                                    </g>
+                                </svg>                              
+                            </a>
+                        </li>
+                    </ul>
 
-                <ul class="footer__social">
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18.287" height="15.05" viewBox="0 0 18.287 15.05">
-                                <g id="twitter-icon" transform="translate(944.071 -473.363)">
-                                  <path id="Контур_39" data-name="Контур 39" d="M-944.071,486.686a7.677,7.677,0,0,0,5.49-1.561,3.9,3.9,0,0,1-3.518-2.643h1.629l.01-.063a3.912,3.912,0,0,1-2.955-3.761,3.926,3.926,0,0,0,1.693.454,4.036,4.036,0,0,1-1.644-2.9,3.723,3.723,0,0,1,.517-2.135,10.7,10.7,0,0,0,7.7,3.928,11.465,11.465,0,0,1,.006-1.192,3.6,3.6,0,0,1,2.418-3.184,3.627,3.627,0,0,1,3.924.777.377.377,0,0,0,.433.107c.634-.245,1.269-.487,1.9-.731.059-.023.115-.055.226-.108A3.754,3.754,0,0,1-927.8,475.7l.034.075,1.983-.55c-.044.068-.09.146-.142.219a7.265,7.265,0,0,1-1.535,1.571.369.369,0,0,0-.167.352,10.762,10.762,0,0,1-6.171,10.045,10.691,10.691,0,0,1-10.074-.563c-.058-.033-.115-.07-.171-.107C-944.054,486.738-944.056,486.719-944.071,486.686Z" transform="translate(0 0)" fill="#357b82"/>
-                                </g>
-                            </svg>                              
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="9.429" height="18.194" viewBox="0 0 9.429 18.194">
-                                <g id="facebook-icon" transform="translate(175.162 -478.229)">
-                                  <path id="Контур_38" data-name="Контур 38" d="M-172.367,496.423c0-.077-.009-.153-.009-.23q0-3.907,0-7.814v-.25h-2.786v-3.235h2.786c0-.091,0-.16,0-.229,0-.846-.018-1.694.017-2.539a4.046,4.046,0,0,1,1.063-2.715,3.734,3.734,0,0,1,2-1.071,7.6,7.6,0,0,1,1.892-.094c.514.02,1.027.064,1.541.1a1.2,1.2,0,0,1,.129.023v2.884h-.186c-.633.009-1.267,0-1.9.033a1.144,1.144,0,0,0-1.2,1.205c-.032.78-.011,1.562-.013,2.344a.225.225,0,0,0,.02.052h3.173l-.416,3.234h-2.767c-.006.069-.014.12-.014.171q0,4,0,8.01c0,.041.006.082.009.123Z" fill="#357b82"/>
-                                </g>
-                            </svg>                              
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="#" class="footer__social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19.03" height="19.017" viewBox="0 0 19.03 19.017">
-                                <g id="inst-icon" transform="translate(512.201 -454.759)">
-                                  <path id="Контур_40" data-name="Контур 40" d="M-403.292,552.381h3.761v1.712c.052-.027.078-.031.087-.046a4.11,4.11,0,0,1,3.643-1.975,5.416,5.416,0,0,1,2.508.469,3.653,3.653,0,0,1,1.923,2.407,9.232,9.232,0,0,1,.352,2.614c.017,2.446.01,4.893.012,7.34,0,.037-.005.075-.009.128h-3.938v-.26c0-2.075.006-4.15-.008-6.225a8.113,8.113,0,0,0-.125-1.407,1.825,1.825,0,0,0-2.293-1.6,2.017,2.017,0,0,0-1.881,1.966,9.583,9.583,0,0,0-.093,1.318c-.01,1.982,0,3.964,0,5.946v.294h-3.935Z" transform="translate(-102.166 -91.286)" fill="#357b82"/>
-                                  <path id="Контур_41" data-name="Контур 41" d="M-506.792,557.154h3.915v12.677h-3.915Z" transform="translate(-5.074 -96.055)" fill="#357b82"/>
-                                  <path id="Контур_42" data-name="Контур 42" d="M-507.636,457.04a2.3,2.3,0,0,1-2.268,2.311,2.314,2.314,0,0,1-2.3-2.309,2.3,2.3,0,0,1,2.272-2.282A2.286,2.286,0,0,1-507.636,457.04Z" fill="#357b82"/>
-                                </g>
-                            </svg>                              
-                        </a>
-                    </li>
-                </ul>
-                
+                </div>                
             </div>
         </div>
     </div>
@@ -573,6 +578,7 @@
 
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/select2.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

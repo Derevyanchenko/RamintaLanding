@@ -1,0 +1,74 @@
+//  cta
+
+.contact {
+    margin-top: 71px;
+    padding-top: 68px;
+    padding-bottom: 72px;
+    background: $dark-blue;
+
+    .section__subtitle {
+
+    }
+
+    .section__title {
+        margin-top: 14px;
+    }
+
+    .section__content {
+
+    }
+
+    .btn {
+        margin-top: 31px;
+    }
+}
+
+.contact__content {
+
+}
+
+// ===============================================================================
+// responsive
+@media (max-width: 1366px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+
+@media (max-width: 991px) {
+    
+
+}
+
+
+@media (max-width: 767px) {
+
+    .contact {
+        margin-top: 60px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+}
+
+@media (max-width: 567px) {
+ 
+    .contact {
+        .section__content {
+            br {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 479px) {
+
+}

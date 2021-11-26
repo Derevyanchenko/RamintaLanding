@@ -1,0 +1,134 @@
+// specialties
+
+.specialties {
+    padding-top: 77px;
+    // padding-bottom: 54px;
+}
+
+.specialties__wrapper {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.specialties__item-wrapper {
+    max-width: calc(20% - 10px);
+    flex: 0 0 calc(20% - 10px);
+    margin: 0 5px;
+    margin-bottom: 10px;
+    padding: 25px 0 33px 0;
+    border-radius: 8px;
+    border: solid 1px #ebebeb;
+}
+
+.specialties__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img {
+        background: $light-blue;
+        width: 81px;
+        height: 81px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+
+        }
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        margin-top: 14px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+        // color: $black;
+        svg {
+            margin-left: 2px;
+        }
+    }
+
+
+}
+
+// #####################################################
+// responsive
+
+@media (max-width: 1200px) {
+
+    .specialties__item-wrapper {
+        max-width: calc(25% - 10px);
+        flex: 0 0 calc(25% - 10px);
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .specialties__item-wrapper {
+        max-width: calc(33.3333% - 10px);
+        flex: 0 0 calc(33.3333% - 10px);
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .specialties {
+        padding-top: 60px;
+
+        .section__content {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .specialties__item-link {
+        font-size: 18px;
+    }
+
+    .specialties__item-link svg {
+        margin-left: 6px;
+    }
+
+    .specialties__item-wrapper {
+        max-width: calc(50% - 10px);
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .specialties__wrapper {
+        margin-top: 35px;
+    }
+
+}
+
+@media (max-width: 567px) {
+
+    .specialties__item-link {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .specialties__item-wrapper {
+        max-width: calc(100% - 10px);
+        flex: 0 0 calc(100% - 10px);
+        padding: 20px 0;
+    }
+
+    .specialties__wrapper {
+        margin-top: 35px;
+        max-width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}

@@ -1,1 +1,142 @@
 // footer
+
+.footer {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copy {
+    font-size: 14px;
+    line-height: 1.86;
+}
+
+// footer menu
+
+.footer__menu {
+
+
+    li a {
+        padding: 0;
+        color: $black;
+        font-weight: 400;
+    }
+}
+
+// footer social
+.footer__social {
+    display: flex;
+    align-items: flex-end;
+    &-item {
+        margin-right: 29px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-link {
+
+        svg {
+
+        }
+    }
+
+}
+
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+    .footer__menu {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    
+    .footer {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+    }
+
+    .footer__copy {
+        order: 3;
+    }
+
+    .footer__social {
+        margin-bottom: 30px;
+        order: 2;
+    }
+
+    .footer__menu {
+        margin-bottom: 30px;
+        order: 1;
+    }
+
+    .footer__menu {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .footer {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .footer__menu li a {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+}
+
+@media (max-width: 567px) {
+
+    .footer__menu {
+        flex-direction: column;
+    }
+
+    .footer__menu li {
+        &:last-child {
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer__menu li a {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+}

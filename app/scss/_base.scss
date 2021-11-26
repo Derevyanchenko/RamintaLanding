@@ -164,53 +164,83 @@
 }
 
 
-// @font-face {
-//     font-family: 'Gilroy';
-//     src: url('fonts/Gilroy-ExtraBold.eot');
-//     src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-//         url('fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-//         url('fonts/Gilroy-ExtraBold.woff') format('woff'),
-//         url('fonts/Gilroy-ExtraBold.ttf') format('truetype');
-//     font-weight: 800;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Gilroy';
-//     src: url('fonts/Gilroy-SemiBold.eot');
-//     src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-//         url('fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-//         url('fonts/Gilroy-SemiBold.woff') format('woff'),
-//         url('fonts/Gilroy-SemiBold.ttf') format('truetype');
-//     font-weight: 600;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Gilroy';
-//     src: url('fonts/Gilroy-Regular.eot');
-//     src: local('Gilroy Regular'), local('Gilroy-Regular'),
-//         url('fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-//         url('fonts/Gilroy-Regular.woff') format('woff'),
-//         url('fonts/Gilroy-Regular.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'Gilroy';
-//     src: url('fonts/Gilroy-Medium.eot');
-//     src: local('Gilroy Medium'), local('Gilroy-Medium'),
-//         url('fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-//         url('fonts/Gilroy-Medium.woff') format('woff'),
-//         url('fonts/Gilroy-Medium.ttf') format('truetype');
-//     font-weight: 500;
-//     font-style: normal;
-// }
-
-
-
 // // styles
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $dark-blue;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $dark-blue;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $dark-blue;
+  }
+
+@media (min-width: 1200px) {
+    .offset-lg-1point5 {
+        margin-left: 12.5%;
+    }
+}
+
+.col-paddings-7 {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.col-margins-7 {
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+// ############################
+// select 2
+// ############################
+.select2-container--default .select2-selection--single {
+    border: none;
+    border-radius: 0;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    background-image: url(../img/arrow-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
+    transform: rotate(180deg);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $dark-blue !important;
+    color: white;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+    font-weight: 500;
+    color: #357b82;
+}
+
 
 * {
 	margin: 0;
@@ -228,6 +258,7 @@ dl, ol, ul {
 
 a {
 	text-decoration: none;
+    color: $black;
 }
 
 button {
@@ -258,6 +289,10 @@ body {
 	position: relative;
 }
 
+body, html {
+    overflow-x: hidden !important;
+}
+
 h1 {
 
 }
@@ -286,10 +321,11 @@ img {
 
 // // modificators
 
-.container {
-	max-width: 1150px;
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1150px;
+    }    
 }
-
 
 .fw500 {
 	font-weight: 600;
@@ -303,6 +339,12 @@ img {
 .fw700 {
 	font-weight: 700;
 }
+
+.--content-color__white {
+    * {
+        color: $white !important;
+    }
+}
   
 // ############################
 // BTN's
@@ -310,6 +352,7 @@ img {
 
 a.btn {
 	display: inline-block;
+    text-align: center;
 }
 
 .btn {
@@ -340,6 +383,16 @@ a.btn {
 
 .btn-bordered {
 	border: solid 1px $dark-blue;
+}
+
+.border-white {
+    border-color: $white;
+}
+
+.btn-brown {
+    border: $brown !important;
+    background: $brown !important;
+    color: $white !important;
 }
 
 // ############################
@@ -682,58 +735,66 @@ a.btn {
 // 	user-select: none !important;
 // 	outline: none !important;
 // }
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+
+}
 
 
-// // ==========================================================================================================================================================
-// // responsive
+@media (max-width: 1200px) {
 
-// @media (max-width: 1366px) {
+    .section__subtitle {
 
-// }
+    }
+
+    .section__title {
+        font-size: 38px;
+    }
+
+    .section__content {
+
+    }
+
+}
 
 
-// @media (max-width: 1200px) {
-
-// 	.section__title {
-// 		font-size: 48px;
-// 		line-height: 54px;
-// 	}
+@media (max-width: 991px) {
     
-// }
+    .section__subtitle {
+
+    }
+
+    .section__title {
+        font-size: 34px;
+    }
+
+    .section__content {
+
+    }
+
+}
 
 
-// @media (max-width: 991px) {
-// 	.section__title {
-// 		font-size: 42px;
-// 		line-height: 48px;
-// 	}
+@media (max-width: 767px) {
 
-// 	.section__subtitle {
-// 		font-size: 16px;
-// 		line-height: 18px;
-// 	}
-// }
+    .section__title {
+        font-size: 30px;
+    }
 
+}
 
+@media (max-width: 567px) {
+    .section__title {
+        font-size: 26px;
+    }
 
-// @media (max-width: 767px) {
-// 	.section__title {
-// 		font-size: 35px;
-// 		line-height: 42px;
-// 	}
+    .section__content {
+        font-size: 16px;
+    }
+}
 
-// 	.section__subtitle {
-// 		font-size: 14px;
-// 		line-height: 16px;
-// 	}
-// }
+@media (max-width: 479px) {
 
-
-// @media (max-width: 479px) {
-
-// }
-
-// @media (max-width: 340px) {
-
-
-// }
+}
