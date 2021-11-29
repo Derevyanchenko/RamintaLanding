@@ -3,6 +3,7 @@
 .footer {
     padding-top: 25px;
     padding-bottom: 30px;
+    background: $light-blue;
 }
 
 .footer__wrapper {
@@ -41,9 +42,16 @@
     }
 
     &-link {
-
-        svg {
-
+        transition: all 0.3s;
+        path {
+            transition: all 0.3s;
+        }
+        
+        &:hover {
+            path {
+                fill: darken( $dark-blue, 10% ) !important;
+                transition: all 0.3s;
+            }
         }
     }
 

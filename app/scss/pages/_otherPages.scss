@@ -1,0 +1,140 @@
+// otherPages
+
+.otherPages{
+    min-height: 917px;
+    padding: 53px 0;
+    .section__subtitle {
+        text-align: center;
+    }
+
+    .section__title {
+        margin-top: 16px;
+        text-align: center;
+    }
+
+}
+
+.otherPages__content {
+    margin-top: 36px;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $black;
+        line-height: 1.71;
+        font-weight: normal;
+    }
+
+    h3 {
+        font-size: 34px;
+        margin-bottom: 1px;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    h4 {
+        margin-bottom: 11px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    ul {
+        padding-left: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        li {
+            // list-style: disc;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 4px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $black;
+                left: -25px;
+                top: 51%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+}
+
+// #######################################################################
+// responsive
+
+@media (max-height: 1024px) {
+    .otherPages {
+        min-height: 843px;
+    }
+}
+
+@media (max-height: 768px) {
+    .otherPages {
+        min-height: 588px;
+    }
+}
+
+@media (max-width: 991px) and (max-height: 1024px) {
+
+    .otherPages {
+        min-height: 760px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .otherPages__content h3 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .otherPages__content h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .otherPages {
+        min-height: auto;
+    }
+
+}
+
+@media (max-width: 567px) {
+
+    .otherPages {
+        min-height: auto;
+    }
+
+    .otherPages .section__title {
+        margin-top: 9px;
+    }
+
+    .otherPages__content h3 {
+        font-size: 28px;
+    }
+
+    .otherPages__content h3 {
+        font-size: 24px;
+    }
+
+    .otherPages__content h4 {
+        font-size: 18px;
+    }
+
+    .otherPages__content ul {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}

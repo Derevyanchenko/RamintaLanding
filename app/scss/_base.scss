@@ -169,15 +169,15 @@
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $dark-blue;
     opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: $dark-blue;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
     color: $dark-blue;
-  }
+}
 
 @media (min-width: 1200px) {
     .offset-lg-1point5 {
@@ -270,6 +270,13 @@ button {
 	font-family: 'IBMPlexSans', sans-serif;
 }
 
+textarea {
+    font-family: 'IBMPlexSans', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    resize: none !important;
+}
+
 input {
 	&:focus {
 		outline: none;
@@ -287,6 +294,7 @@ body {
 	font-family: 'IBMPlexSans', sans-serif;
 	font-weight: 400;
 	position: relative;
+    background: $section_grey;
 }
 
 body, html {
@@ -345,7 +353,49 @@ img {
         color: $white !important;
     }
 }
-  
+
+// ############################
+// tabs module
+// ############################ 
+.tabs {
+    width: 100%;
+}
+
+ul.tabs-nav {
+    margin-top: 26px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e0e4e5;
+}
+
+li.tab.tabs-nav__item {
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    background: $light-blue;
+    color: $dark-blue;
+    padding: 15px 30px;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 1;
+}
+
+li.tab.tabs-nav__item.active {
+    background: #d9e9eb !important;
+}
+
+.tabs__content {
+
+}
+
+.tabs__content-item {
+    
+}
+
+
 // ############################
 // BTN's
 // ############################
@@ -358,7 +408,8 @@ a.btn {
 .btn {
 	font-size: 16px;
 	font-weight: 600;
-	padding: 13px 21px;
+	padding: 14px 31px;
+    transition: all 0.3s;
 }
 
 .btn-rounded {
@@ -367,7 +418,7 @@ a.btn {
 
 .btn-blue-round {
 	color: $dark-blue;
-	border-color: $dark-blue
+	border-color: $dark-blue;
 }
 
 .btn-shadow {
@@ -377,22 +428,46 @@ a.btn {
 
 .btn-blue {
 	background: $dark-blue;
-	color: #fff;
+	color: $white;
+    &:hover {
+        background: darken( $dark-blue, 10% ) !important;
+    }
 }
 
 
 .btn-bordered {
 	border: solid 1px $dark-blue;
+    &:hover {
+        background: $dark-blue;
+        color: $white;
+    }
 }
 
 .border-white {
     border-color: $white;
+    &:hover {
+        background: $white !important;
+        color: $dark-blue !important;
+    }
 }
 
 .btn-brown {
-    border: $brown !important;
+    border-color: $brown !important;
     background: $brown !important;
     color: $white !important;
+    &:hover {
+        background: darken( $brown, 10% ) !important;
+    }
+}
+
+.search__form {
+
+    .form-btn {
+        max-width: 202px;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 // ############################
